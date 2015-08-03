@@ -11,13 +11,13 @@ pip install py-trello
 ```
 
 * Get your API keys 
-** Login to trello.com
-** Go to https://trello.com/app-key to find your developer API keys
-*** API Key: <Save your key>
-*** API Secret: <Save your secret>
+  * Login to trello.com
+  * Go to https://trello.com/app-key to find your developer API keys
+    * API Key: <Save your key>
+    * API Secret: <Save your secret>
 
 * Request a Token for your app using the API key
-** In a browser go to https://trello.com/1/connect?key=<insert key here>&name=StatusReport&response_type=token
+  * In a browser go to https://trello.com/1/connect?key=<insert key here>&name=StatusReport&response_type=token
 NOTE: Add "&scope=read,write" if you want a read/write token. 
 
 * Configure trello-status
@@ -25,17 +25,17 @@ NOTE: Add "&scope=read,write" if you want a read/write token.
 git clone https://github.com/jonjozwiak/trello-status
 cd trello-status
 ```
-** Add your API Key, API Secret, and Token from above into status_report.conf
+  * Add your API Key, API Secret, and Token from above into status_report.conf
 ```
 api_key=...
 api_secret=...
 token=...
 ```
-** Add your board name that you want to report from 
+  * Add your board name that you want to report from 
 ```
 board_name=...
 ```
-** By default it will report the last 7 days from today 
+  * By default it will report the last 7 days from today 
 
 * Generate a report
 ```
