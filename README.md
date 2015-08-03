@@ -12,7 +12,18 @@ pip install py-trello
 * Patch py-trello
 ```
 vi /usr/lib/python2.7/site-packages/trello/card.py
-# Edit line 158 to read: return sorted(comments)
+# Edit line 158 to read: return sorted(comments).  If not, you will see the following error when executing:
+
+Traceback (most recent call last):
+  File "./status_report.py", line 48, in <module>
+    c.fetch()
+  File "/usr/lib/python2.7/site-packages/trello/card.py", line 149, in fetch
+    self._comments = self.fetch_comments() if eager else None
+  File "/usr/lib/python2.7/site-packages/trello/card.py", line 158, in fetch_comments
+    return sorted(comments, key=lambda comment: checklist['date'])
+  File "/usr/lib/python2.7/site-packages/trello/card.py", line 158, in <lambda>
+    return sorted(comments, key=lambda comment: checklist['date'])
+NameError: global name 'checklist' is not defined
 ```
 
 * Get your API keys 
