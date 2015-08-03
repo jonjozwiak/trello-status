@@ -12,7 +12,8 @@ pip install py-trello
 * Patch py-trello
 ```
 vi /usr/lib/python2.7/site-packages/trello/card.py
-# Edit line 158 to read: return sorted(comments).  If not, you will see the following error when executing:
+# Edit line 158 to read: return sorted(comments).  
+# If not, you will see the following error when executing:
 
 Traceback (most recent call last):
   File "./status_report.py", line 48, in <module>
