@@ -9,6 +9,11 @@ yum -y install git python-pip python-requests
 git clone https://github.com/sarumont/py-trello.git
 pip install py-trello
 ```
+* Patch py-trello
+```
+vi /usr/lib/python2.7/site-packages/trello/card.py
+# Edit line 158 to read: return sorted(comments)
+```
 
 * Get your API keys 
   * Login to trello.com
