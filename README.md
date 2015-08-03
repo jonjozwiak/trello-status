@@ -17,7 +17,7 @@ pip install py-trello
     * API Secret: 
 
 * Request a Token for your app using the API key
-  * In a browser go to https://trello.com/1/connect?key=_insert key here_&name=StatusReport&response_type=token
+  * In a browser go to [https://trello.com/1/connect?key=_insert key here_&name=StatusReport&response_type=token]
     * Add "&scope=read,write" if you want a read/write token. 
 
 * Configure trello-status
