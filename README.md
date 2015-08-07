@@ -10,6 +10,7 @@ git clone https://github.com/sarumont/py-trello.git
 pip install py-trello
 ```
 * Patch py-trello
+This patch should no longer be needed based on my latest test.  However, I'm leaving the comments here in case the problem returns
 ```
 vi /usr/lib/python2.7/site-packages/trello/card.py
 # Edit line 158 to read: return sorted(comments).  
